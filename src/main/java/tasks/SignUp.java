@@ -12,7 +12,7 @@ import userinterface.UTestSignUpPage;
 
 public class SignUp implements Task {
 
-       public static SignUp onThePage() {
+    public static SignUp onThePage() {
         return Tasks.instrumented(SignUp.class);
     }
 
@@ -22,7 +22,7 @@ public class SignUp implements Task {
         actor.attemptsTo(Click.on(UTestSignUpPage.BUTTON_SIGNUP),
                 Enter.theValue("Cristian").into(UTestSignUpPage.INPUT_FIRSTNAME),
                 Enter.theValue("Torres").into(UTestSignUpPage.INPUT_LASTNAME),
-                Enter.theValue("correoprueba2022@correo.com").into(UTestSignUpPage.INPUT_EMAIL),
+                Enter.theValue("correoprueba2022@correoprueba.com").into(UTestSignUpPage.INPUT_EMAIL),
                 SelectFromOptions.byVisibleText("July").from(UTestSignUpPage.SELECT_BIRTHMONTH),
                 SelectFromOptions.byVisibleText("25").from(UTestSignUpPage.SELECT_BIRTHDAY),
                 SelectFromOptions.byVisibleText("1993").from(UTestSignUpPage.SELECT_BIRTHYEAR),
